@@ -1,4 +1,4 @@
-# Professional README generator
+# Professional Readme Generator
     
 
     
@@ -23,17 +23,15 @@
 
     
 ## Installation
+    
+ To install this app copy all the file from the repo to a working directory and then open a terminal and type node index.js and follow the prompts.
 
-1. Copy all of these files to your working directory.
-
-2. Open a command line within the working directory.
-
-3. Type node index.js and hit enter and follow the prompts.
+Video Tutorial https://watch.screencastify.com/v/tehpI4bdxQgmyNpyXjkn
 
     
 ## Usage
     
- To use this app make open a terminal in the working directory and type node index.js and follow the prompts
+ Follow all of the prompts and answer the questions with the answer that you would like in your Readme
 
     
 
@@ -41,12 +39,12 @@
     
 ## Contribution
     
- If you'd like to contribute to this project please feel free to do so!
+ Feel free to contribute on this project if you'd like!
 
     
 ## Test Instructions
     
- coming soon
+ Coming soon!
 
     
  If you have any comments or questions I can be reached through the contacts below.
