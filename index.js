@@ -58,7 +58,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What license type are you using?",
-        choices: ["None", "Apache License 2.0", "GNU General Public License v3.0", "MIT License", 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unilicense"]
+        choices: ["Apache 2.0", "Unilicense", "MIT", "Boost Software License", "IBM Public License", "none"]
     },
 
     // user name for github
@@ -80,7 +80,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const markDownText = utility.generateMarkdown(data);
+    const markDownText = markDown.generateMarkdown(data);
 
     fs.writeFile(fileName, markDownText, (err) => {
         err ? console.log(err) : console.log("readme generated!");
@@ -93,7 +93,7 @@ const init = async() => {
         const data = await inquirer.prompt(questions)
 
         .then((data) => {
-            writeToFile(fileName, data);
+            writeToFile("readme.md", data);
         })
     }
     catch (err) {
