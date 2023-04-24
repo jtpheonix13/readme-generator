@@ -53,15 +53,96 @@ function renderLicenseSection(license) {
     return "";
   } else {
     return `## License \nThis app was made using a ${license} license. 
-    \n[link to license](${renderLicenseLink(licensec)})`
+    \n[link to license](${renderLicenseLink(license)})`
+  }
+}
+
+function renderDescription(data) {
+  if (data === undefined || data === "") {return `## Description`}
+  else {
+    return `## Description
+    \n ${data}`
+  }
+}
+
+function renderInstallation(data) {
+  if (data === undefined || data === "") {return `## Installation`}
+  else {
+    return `## Installation
+    \n ${data}
+    `
+  }
+}
+
+function renderUsage(data) {
+  if (data === undefined || data === "") {return `## Usage`}
+  else {
+    return `## Usage
+    \n ${data}`
+  }
+}
+
+function renderContribution(data) {
+  if (data === undefined || data === "") {return `## Contribution`}
+  else {
+    return `## Contribution
+    \n ${data}`
+  }
+}
+
+function renderTest(data) {
+  if (data === undefined || data === "") {return `## Test Instructions`}
+  else {
+    return `## Test Instructions
+    \n ${data}`
+  }
+}
+
+function renderEmail(data) {
+  if (data === undefined || data === "") {return `## Email: `}
+  else {
+    return `## Email: ${data}`
+  }
+}
+
+function renderGithub(data) {
+  if (data === undefined || data === "") {return `## Github: `}
+  else {
+    return `## Github: ${data}`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+    ${renderLicenseBadge(data.license)}
+
+    \n${renderDescription(data.description)}
+
+    * [Installation](#installation) 
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Test](#test)
+    * [Questions](#questions)
+
+    ${renderInstallation(data.installation)}
+
+    ${renderUsage(data.usage)}
+
+    ${renderLicenseSection(data.license)}
+
+    ${renderContribution(data.contribution)}
+
+    ${renderTest(data.testInstructions)}
+
+    \n If you have any comments or questions I can be reached through the contacts below.
+
+    ${renderEmail(data.contactInfo)}
+    ${renderGithub(data.githubName)}
+
 
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown};
