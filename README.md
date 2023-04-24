@@ -23,8 +23,12 @@
 
     
 ## Installation
-    
- Video coming soon
+
+1. Copy all of these files to your working directory.
+
+2. Open a command line within the working directory.
+
+3. Type node index.js and hit enter and follow the prompts.
 
     
 ## Usage
