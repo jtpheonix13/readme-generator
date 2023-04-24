@@ -69,8 +69,7 @@ function renderInstallation(data) {
   if (data === undefined || data === "") {return `## Installation`}
   else {
     return `## Installation
-    \n ${data}
-    `
+    \n ${data}`
   }
 }
 
@@ -101,45 +100,46 @@ function renderTest(data) {
 function renderEmail(data) {
   if (data === undefined || data === "") {return `## Email: `}
   else {
-    return `## Email: ${data}`
+    return `### Email: ${data}`
   }
 }
 
 function renderGithub(data) {
   if (data === undefined || data === "") {return `## Github: `}
   else {
-    return `## Github: ${data}`
+    return `### Github: ${data}`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
+    
 
     \n${renderDescription(data.description)}
 
-    * [Installation](#installation) 
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Test](#test)
-    * [Questions](#questions)
+    \n## Table of Contents
+    \n[Installation](#installation)
+    \n[Usage](#usage)
+    \n[License](#license)
+    \n[Contribution](#contribution)
+    \n[Test](#test)
+    \n[Contact](#contact)
 
-    ${renderInstallation(data.installation)}
+    \n${renderInstallation(data.installation)}
 
-    ${renderUsage(data.usage)}
+    \n${renderUsage(data.usage)}
 
-    ${renderLicenseSection(data.license)}
+    \n${renderLicenseSection(data.license)}
 
-    ${renderContribution(data.contribution)}
+    \n${renderContribution(data.contribution)}
 
-    ${renderTest(data.testInstructions)}
+    \n${renderTest(data.testInstructions)}
 
     \n If you have any comments or questions I can be reached through the contacts below.
 
-    ${renderEmail(data.contactInfo)}
-    ${renderGithub(data.githubName)}
+    \n${renderEmail(data.contactInfo)}
+    \n${renderGithub(data.githubName)}
 
 
 `;

@@ -1,44 +1,55 @@
-# this is a test
-    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Professional README generator
+    
 
     
 ## Description
     
- this is a test description
+ This app is designed to recieve user input via command line to generate a readme.md file.
 
-    * [Installation](#installation) 
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Test](#test)
-    * [Questions](#questions)
+    
+## Table of Contents
+    
+[Installation](#installation)
+    
+[Usage](#usage)
+    
+[License](#license)
+    
+[Contribution](#contribution)
+    
+[Test](#test)
+    
+[Contact](#contact)
 
-    ## Installation
     
- these are test instructions
+## Installation
+    
+ Video coming soon
+
+    
+## Usage
+    
+ To use this app make open a terminal in the working directory and type node index.js and follow the prompts
+
     
 
-    ## Usage
-    
- these are test usage instructions
 
-    ## License 
-This app was made using a Apache 2.0 license. 
     
-[link to license](https://opensource.org/licenses/Apache-2.0)
+## Contribution
+    
+ If you'd like to contribute to this project please feel free to do so!
 
-    ## Contribution
     
- these are also test instructions
-
-    ## Test Instructions
+## Test Instructions
     
- yessir another test
+ coming soon
 
     
  If you have any comments or questions I can be reached through the contacts below.
 
-    ## Email: jgtihunt@comcast.net
-    ## Github: jtpheonix13
+    
+### Email: jgtihunt@comcast.net
+    
+### Github: jtpheonix13
 
 
