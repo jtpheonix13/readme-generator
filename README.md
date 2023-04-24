@@ -1,36 +1,39 @@
-# Professional README generator
-    
+# this is a test
+    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
     
 ## Description
     
- This app prompts the user with questions via the command line and generates a README
+ this is a test description
 
-    * [Installation](#Installation) 
-    * [Usage](#Usage)
-    * [License](#License)
-    * [Contributing](#Contributing)
+    * [Installation](#installation) 
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
     * [Test](#test)
     * [Questions](#questions)
 
     ## Installation
     
- 1. Install the inquirer package in the working directory 2. type node index.js and follow the prompts
+ these are test instructions
     
 
     ## Usage
     
- Use this app to generate a readme file
+ these are test usage instructions
 
+    ## License 
+This app was made using a Apache 2.0 license. 
     
+[link to license](https://opensource.org/licenses/Apache-2.0)
 
     ## Contribution
     
- none
+ these are also test instructions
 
     ## Test Instructions
     
- none
+ yessir another test
 
     
  If you have any comments or questions I can be reached through the contacts below.
